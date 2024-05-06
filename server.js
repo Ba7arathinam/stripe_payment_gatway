@@ -20,14 +20,14 @@ app.get('/create-checkout-session', async (req, res) => {
       product_data: {
         name: 'Total Amount to pay',
         description: 'grab your food on your doors',
-        images: ['https://th.bing.com/th/id/OIP.F6VyuMUgr0Rx8wTNPJ8mBAHaIu?rs=1&pid=ImgDetMain'],
+        images: ['https://th.bing.com/th/id/OIG3.1s5npgA9GRi23B7x5eaU?w=1024&h=1024&rs=1&pid=ImgDetMain'],
       },
     },
       },
     ],
     mode: 'payment',
-    success_url: `http://localhost:4200/confirmation?success=true`,
-    cancel_url: `http://localhost:4200/confirmation?success=false`,
+    success_url: `https://foodapp-dew.pages.dev/confirmation?success=true`,
+    cancel_url: `https://foodapp-dew.pages.dev/confirmation?success=false`,
   });
   
   console.log(session)
