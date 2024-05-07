@@ -26,8 +26,8 @@ app.get('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: `https://foodapp-dew.pages.dev/confirmation?success=true`,
-    cancel_url: `https://foodapp-dew.pages.dev/confirmation?success=false`,
+    success_url: `https://orderzit.vercel.app/confirmation?success=true`,
+    cancel_url: `https://orderzit.vercel.app/confirmation?success=false`,
   });
   
   console.log(session)
